@@ -21,4 +21,15 @@ class MenadzerModel extends Model
         return $db->table('menadzer')->join('korisnik', 'korisnik.idKor = menadzer.idKor')->get()->getResult();
     }
     
+    public function getManagersByPartialUsername($username) {
+        $username = '%'.$username.'%';
+        $db = \Config\Database::connect();
+        return $db->table('menadzer')->join('korisnik', 'korisnik.idKor = menadzer.idKor')->like("korisnicko_ime", $username)->get()->getResult();
+    }
+    
+    public function getOpenConcurForManager($username) {
+        $db = \Config\Database::connect();
+        return $db->table('menadzer')->join('korisnik', 'korisnik.idKor = menadzer.idKor')->join('konkurs', 'konkurs.idMen = korisnik.idKor')->where('korisnik.korisnicko_ime' , $username)->where('konkurs.status_konkursa', 'Otvoren')->get()->getResult();
+    }
+    
 }

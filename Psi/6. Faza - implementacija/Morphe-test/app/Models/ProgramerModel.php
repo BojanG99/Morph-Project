@@ -20,5 +20,11 @@ class ProgramerModel extends Model
         $db = \Config\Database::connect();
         return $db->table('programer')->join('korisnik', 'korisnik.idKor = programer.idKor')->get()->getResult();
     }
+    
+    public function getProgramersByPartialUsername($username) {
+        $username = '%'.$username.'%';
+        $db = \Config\Database::connect();
+        return $db->table('programer')->join('korisnik', 'korisnik.idKor = programer.idKor')->like("korisnicko_ime", $username)->get()->getResult();
+    }
 
 }

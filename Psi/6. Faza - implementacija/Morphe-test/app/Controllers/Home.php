@@ -77,12 +77,6 @@ class Home extends BaseController{
         }
         
         public function register() {
-         /*   $username = $_POST['usernameinput'];
-            $password = $_POST['passwordinput'];
-            $password2 = $_POST['passwordagaininput'];
-            $email = $_POST['emailinput'];
-            $telefon = $_POST['numberinput'];
-            $tip = $_POST['type'];  */
             
             $username = $this->request->getVar('usernameinput');
             $password = $this->request->getVar('passwordinput');
@@ -129,14 +123,26 @@ class Home extends BaseController{
                 $greska = "Email nije u dobro formatu!";
                 return $this->registerpage($greska);
             }
-            // proveriti broj telefona
+
+            $telefon = implode('', explode (' ', $telefon));
+            $brojcifara = strlen($telefon);
+            if (  (  ($telefon[0] == '+' && ($brojcifara == 12 || $brojcifara == 13) && is_numeric(substr($telefon, 1))) || 
+                     (($brojcifara == 9 || $brojcifara == 10) && is_numeric($telefon))
+                    
+                )) {
+                $greska = "Broj telefona nije u ispravnom formatu";
+                return $this->registerpage($greska);
+            }
+            
+            if ($telefon[0] != '+') {
+                $telefon = "+381".substr($telefon, 1);
+            }
             
             $korisnik = [
                 'korisnicko_ime' => $username,
                 'lozinka' => $password,
                 'email' => $email,
                 'broj_telefona' => $telefon,
-                'tip' => $tip
             ];
                 
             $korisnikModel->insert($korisnik);

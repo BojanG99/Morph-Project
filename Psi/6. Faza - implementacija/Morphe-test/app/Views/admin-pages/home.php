@@ -25,12 +25,13 @@
             </div>
 
             <div class="col-1 offset-8 offset-md-9" style="text-align: center;">
-                <img src="
-                    <?php 
-                        if (!empty($_SESSION['slika_URL'])) echo $_SESSION['slika_URL'];
-                            else echo baseUrlWithoutPublic."images/unknownuser.jpg"
-                    ?> " 
-                style="height: 55px;">
+                <a href="<?php echo site_url('Admin/myProfile')?>"><img src="
+                        <?php 
+                            if (!empty($_SESSION['slika_URL'])) echo $_SESSION['slika_URL'];
+                                else echo baseUrlWithoutPublic."images/unknownuser.jpg"
+                        ?> " 
+                    style="height: 55px;">
+                    </a>
                 
                 <p style="text-align:center">
                     <?php
@@ -68,7 +69,7 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table table-striped table-bordered" style="text-align: center; background-color: #c8e2e2;"">
+                    <table class="table table-striped table-bordered" style="text-align: center; background-color: #c8e2e2;">
                         <tr>
                             <th></th>
                             <th>Korisnicko ime</th>
