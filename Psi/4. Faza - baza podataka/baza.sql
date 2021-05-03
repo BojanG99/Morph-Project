@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 25, 2021 at 05:40 PM
+-- Generation Time: May 03, 2021 at 12:33 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -99,6 +99,14 @@ CREATE TABLE IF NOT EXISTS `klijent` (
   PRIMARY KEY (`idKor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `klijent`
+--
+
+INSERT INTO `klijent` (`idKor`) VALUES
+(7),
+(8);
+
 -- --------------------------------------------------------
 
 --
@@ -117,7 +125,18 @@ CREATE TABLE IF NOT EXISTS `konkurs` (
   PRIMARY KEY (`idKon`),
   KEY `idJez` (`idJez`),
   KEY `idMen` (`idMen`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `konkurs`
+--
+
+INSERT INTO `konkurs` (`idKon`, `idJez`, `idMen`, `opis`, `vreme_pocetka`, `vreme_kraja`, `status_konkursa`) VALUES
+(1, 1, 3, 'Neki opis konkursa', '2021-04-24 08:00:00', '2021-04-25 08:00:00', 'Zatvoren'),
+(3, 2, 4, 'Neki opis konkursa - drugi', '2021-04-23 08:00:00', '2021-04-30 08:00:00', 'Otvoren'),
+(4, 2, 5, 'Treba mi neki mnogo dugacak opis da bi video da li ovo radi kako treba', '2021-04-18 08:00:00', '2021-05-02 08:00:00', 'Otvoren'),
+(6, 2, 5, 'Treba mi neki mnogo dugacak opis da bi video da li ovo radi kako treba', '2021-04-18 08:00:00', '2021-05-02 08:00:00', 'Otvoren'),
+(7, 1, 6, 'Treba mi neki mnogo dugacak opis da bi video da li ovo radi kako treba i da bi video da sam mnogo dobar', '2021-04-16 01:00:00', '2021-05-03 09:00:00', 'Otvoren');
 
 -- --------------------------------------------------------
 
@@ -134,14 +153,22 @@ CREATE TABLE IF NOT EXISTS `korisnik` (
   `broj_telefona` varchar(256) NOT NULL,
   `slika_URL` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`idKor`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `korisnik`
 --
 
 INSERT INTO `korisnik` (`idKor`, `korisnicko_ime`, `lozinka`, `email`, `broj_telefona`, `slika_URL`) VALUES
-(1, 'admin', 'admin', 'nesto@gmail.com', '060021231', NULL);
+(1, 'admin', 'admin', 'nesto@gmail.com', '060021231', NULL),
+(2, 'jeca', 'lozinka', 'nesto@gmail.com', '+38163321321', NULL),
+(3, 'menadzer1', 'lozinka', 'nesto2@gmail.com', '+38163231543', NULL),
+(4, 'menadzer2', 'lozinka', 'nesto@gmail.com', '062212212', NULL),
+(5, 'nikola', 'lozinka', 'nesto@gmail.com', '062212212', NULL),
+(6, 'pavle', 'lozinka', 'nesto@gmail.com', '062212212', NULL),
+(7, 'klijent1', 'lozinka', 'nesto@gmail.com', '+381652313213', NULL),
+(8, 'klijent2', 'lozinka', 'bilosta2@gmail.com', '063132212', NULL),
+(10, 'bojan', 'lozinka', 'nesto@gmail.com', '+38162231231', NULL);
 
 -- --------------------------------------------------------
 
@@ -155,6 +182,13 @@ CREATE TABLE IF NOT EXISTS `korisniknacekanju` (
   `tip` enum('Programer','Klijent','Menadzer','') NOT NULL,
   PRIMARY KEY (`idKor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `korisniknacekanju`
+--
+
+INSERT INTO `korisniknacekanju` (`idKor`, `tip`) VALUES
+(10, 'Programer');
 
 -- --------------------------------------------------------
 
@@ -170,6 +204,16 @@ CREATE TABLE IF NOT EXISTS `menadzer` (
   `status_menadzera` enum('Angazovan','Neangazovan') NOT NULL,
   PRIMARY KEY (`idKor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `menadzer`
+--
+
+INSERT INTO `menadzer` (`idKor`, `prosecna_ocena`, `broj_glasova`, `status_menadzera`) VALUES
+(3, 7.5, 2, 'Neangazovan'),
+(4, 10, 1, 'Neangazovan'),
+(5, 8, 1, 'Neangazovan'),
+(6, 6, 3, 'Neangazovan');
 
 -- --------------------------------------------------------
 
@@ -205,6 +249,13 @@ CREATE TABLE IF NOT EXISTS `pozvan_na_konkurs` (
   KEY `idPro` (`idPro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `pozvan_na_konkurs`
+--
+
+INSERT INTO `pozvan_na_konkurs` (`idKon`, `idPro`, `status_prijave`) VALUES
+(3, 2, 'Otvoren');
+
 -- --------------------------------------------------------
 
 --
@@ -219,6 +270,14 @@ CREATE TABLE IF NOT EXISTS `prijavio_se_na_konkurs` (
   PRIMARY KEY (`idKon`,`idPro`),
   KEY `idPro` (`idPro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `prijavio_se_na_konkurs`
+--
+
+INSERT INTO `prijavio_se_na_konkurs` (`idKon`, `idPro`, `status_prijave`) VALUES
+(4, 2, 'Otvoren'),
+(7, 2, 'Otvoren');
 
 -- --------------------------------------------------------
 
@@ -235,6 +294,13 @@ CREATE TABLE IF NOT EXISTS `programer` (
   `cv_URL` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`idKor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `programer`
+--
+
+INSERT INTO `programer` (`idKor`, `prosecna_ocena`, `broj_glasova`, `status_programera`, `cv_URL`) VALUES
+(2, 0, 0, 'Neangazovan', NULL);
 
 -- --------------------------------------------------------
 
@@ -261,7 +327,17 @@ CREATE TABLE IF NOT EXISTS `programski_jezik` (
   `idPro` int(11) NOT NULL AUTO_INCREMENT,
   `naziv` varchar(256) NOT NULL,
   PRIMARY KEY (`idPro`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `programski_jezik`
+--
+
+INSERT INTO `programski_jezik` (`idPro`, `naziv`) VALUES
+(1, 'Java'),
+(2, 'JavaScript'),
+(3, 'Php'),
+(4, 'Python');
 
 -- --------------------------------------------------------
 
