@@ -38,7 +38,7 @@ $brojKonkursaURedu = 2;
             <div class="col-1 offset-8 offset-md-9" style="text-align: center;">
                 <a href="<?php echo site_url('Programer/myProfile')?>"><img src="
                         <?php 
-                            if (!empty($_SESSION['slika_URL'])) echo $_SESSION['slika_URL'];
+                            if (!empty($_SESSION['slika_URL'])) echo baseUrlWithoutPublic.$_SESSION['slika_URL'];
                                 else echo baseUrlWithoutPublic."images/unknownuser.jpg"
                         ?> " 
                     style="height: 55px;">
@@ -116,13 +116,14 @@ $brojKonkursaURedu = 2;
                             echo "<table style='width: 100%'>";
                             foreach($konkursi as $konkurs) {
                                 $urlPrijave = site_url('Programer/prijaviSeNaKonkurs/').$konkurs->idKon;
+                                $urlKorisnika = site_url('Programer/profile/').$konkurs->korisnicko_ime;
                                 if ($count == 0) echo "<tr style='display: flex; justify-content: space-around'>";
                                 echo "<td style='margin: 1%; '>
                                         <table class='table borderless' style='background-color: lightsteelblue; '>
                                             <tr>
                                                 <td>Klijent: </td>
                                                 <td>{$konkurs->korisnicko_ime}</td>
-                                                <td><a href=''>Profile</a></td>
+                                                <td><a href='"."{$urlKorisnika}"."'>Profile</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Jezik: </td>

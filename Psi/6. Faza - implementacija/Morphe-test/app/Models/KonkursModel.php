@@ -10,7 +10,7 @@ class KonkursModel extends Model
     protected $primaryKey = 'idKon';
     protected $useAutoIncrement = true;
     protected $returnType = 'object';
-    protected $allowedFields = ['idJez' , 'idMen' , 'opis' , 'vreme_pocetka', 'vreme_kraja', 'status_konkursa'];
+    protected $allowedFields = ['idKon','idJez' , 'idMen' , 'opis' , 'vreme_pocetka', 'vreme_kraja', 'status_konkursa'];
     
     public function getActiveConcursForLanguage($jezik) {
         $jezik = '%'.$jezik.'%';

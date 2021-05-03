@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\MenadzerModel;
+use App\Models\KlijentModel;
 
 class Klijent extends UserUnspecificControler{
 
@@ -20,6 +21,25 @@ class Klijent extends UserUnspecificControler{
         }
         
         return "Razgovori za klijenta sa $username";
+    }
+    
+    public function myProfile() {
+        
+        $model = new KlijentModel();
+        $klijent = $model->getClientsByUsername($this->session->get('username'))[0];
+        
+        $greska = $this->session->get('greska');
+        $poruka = $this->session->get('poruka');
+        
+        $this->session->set('greska', null);
+        $this->session->set('poruka', null);
+        
+        return view('client-pages/profile', [
+            'klijent' => $klijent,
+            'myProfile' => true,
+            'greska' => $greska,
+            'poruka' => $poruka
+        ]);
     }
     
     

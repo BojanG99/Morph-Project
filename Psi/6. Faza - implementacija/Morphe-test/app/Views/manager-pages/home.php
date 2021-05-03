@@ -36,9 +36,9 @@
             </div> -->
 
             <div class="col-1 offset-8 offset-md-9" style="text-align: center;">
-                <a href="<?php echo site_url('Menadzer/myProfile')?>"><img src="
+                <a href="<?php echo site_url('Menadzer/myProfile/Menadzer')?>"><img src="
                         <?php 
-                            if (!empty($_SESSION['slika_URL'])) echo $_SESSION['slika_URL'];
+                            if (!empty($_SESSION['slika_URL'])) echo baseUrlWithoutPublic.$_SESSION['slika_URL'];
                                 else echo baseUrlWithoutPublic."images/unknownuser.jpg"
                         ?> " 
                     style="height: 55px;">

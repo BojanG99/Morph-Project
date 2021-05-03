@@ -81,3 +81,4 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 defined('baseUrlWithoutPublic') || define('baseUrlWithoutPublic', 'http://localhost/Morphe-test/');
+defined('rootDirectory') || define('rootDirectory', 'C:/wamp64/www/Morphe-test/');

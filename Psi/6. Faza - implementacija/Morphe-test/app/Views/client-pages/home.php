@@ -36,9 +36,9 @@
             </div> -->
 
             <div class="col-1 offset-8 offset-md-9" style="text-align: center;">
-                <a href="<?php echo site_url('Klijent/myProfile')?>"><img src="
+                <a href="<?php echo site_url('Klijent/myProfile/Klijent')?>"><img src="
                         <?php 
-                            if (!empty($_SESSION['slika_URL'])) echo $_SESSION['slika_URL'];
+                            if (!empty($_SESSION['slika_URL'])) echo baseUrlWithoutPublic.$_SESSION['slika_URL'];
                                 else echo baseUrlWithoutPublic."images/unknownuser.jpg"
                         ?> " 
                     style="height: 55px;">
@@ -125,12 +125,13 @@
                             $count = 0;
                             echo "<table style='width: 100%'>";
                             foreach($menadzeri as $menadzer) {
+                                $urlProfila = site_url('Klijent/profile/').$menadzer->korisnicko_ime;
                                 if ($count == 0) echo "<tr style='display: flex; justify-content: space-around'>";
                                 echo "<td >
                                         <table class='table borderless' style='background-color: lightsteelblue; '>
                                             <tr>
                                                 <td>Menadzer: </td>
-                                                <td>{$menadzer->korisnicko_ime}</td>
+                                                <td><a href='{$urlProfila}' style='color: black'>{$menadzer->korisnicko_ime}</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Ocena: </td>
@@ -160,6 +161,16 @@
             </div>
         
         
+        <div class="row">
+            <div class="col-8">
+                
+            </div>
+            
+            <div class="col-4">
+                
+            </div>
+            
+        </div>
 
         
     </div>

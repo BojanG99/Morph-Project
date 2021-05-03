@@ -41,7 +41,18 @@ class Home extends BaseController{
                 $this->session->set('username', $username);
                 $this->session->set('password', $password);
                 $this->session->set('slika_URL' , $korisnici[0]->slika_URL);
+                $this->session->set('controller', 'Admin');
                 return redirect()->to(site_url('Admin'));
+            }
+            
+            $korisnkNaCekanjuModel = new KorisnikNaCekanjuModel();
+            $korisniciNaCekanju = $korisnkNaCekanjuModel->getAllUsersOnHold();
+            
+            foreach ($korisniciNaCekanju as $korisnik) {
+                if ($korisnik->korisnicko_ime == $username) {
+                    $greska = "Ne mozete se ulogovati. Admin nije obradio vas zahtev!";
+                    return $this->loginpage($greska);
+                }
             }
            
             
@@ -51,6 +62,7 @@ class Home extends BaseController{
                 $this->session->set('username', $username);
                 $this->session->set('password', $password);
                 $this->session->set('slika_URL' , $korisnici[0]->slika_URL);
+                $this->session->set('controller', 'Klijent');
                 return redirect()->to(site_url('Klijent'));
             }
             
@@ -60,6 +72,7 @@ class Home extends BaseController{
                 $this->session->set('username', $username);
                 $this->session->set('password', $password);
                 $this->session->set('slika_URL' , $korisnici[0]->slika_URL);
+                $this->session->set('controller', 'Menadzer');
                 return redirect()->to(site_url('Menadzer'));
             }
             
@@ -69,6 +82,7 @@ class Home extends BaseController{
                 $this->session->set('username', $username);
                 $this->session->set('password', $password);
                 $this->session->set('slika_URL' , $korisnici[0]->slika_URL);
+                $this->session->set('controller', 'Programer');
                 return redirect()->to(site_url('Programer'));
             }
             
@@ -126,7 +140,7 @@ class Home extends BaseController{
 
             $telefon = implode('', explode (' ', $telefon));
             $brojcifara = strlen($telefon);
-            if (  (  ($telefon[0] == '+' && ($brojcifara == 12 || $brojcifara == 13) && is_numeric(substr($telefon, 1))) || 
+            if (  !(  ($telefon[0] == '+' && ($brojcifara == 12 || $brojcifara == 13) && is_numeric(substr($telefon, 1))) || 
                      (($brojcifara == 9 || $brojcifara == 10) && is_numeric($telefon))
                     
                 )) {

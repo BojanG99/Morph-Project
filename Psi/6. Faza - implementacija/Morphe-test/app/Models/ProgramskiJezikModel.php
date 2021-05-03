@@ -10,7 +10,7 @@ class ProgramskiJezikModel extends Model
     protected $primaryKey = 'idPro';
     protected $useAutoIncrement = true;
     protected $returnType = 'object';
-    protected $allowedFields = [ 'naziv' ];
+    protected $allowedFields = [ 'idPro','naziv' ];
    
     public function getProgrammingLanguagesByPartialName($name) {
         $name = '%'.$name.'%';

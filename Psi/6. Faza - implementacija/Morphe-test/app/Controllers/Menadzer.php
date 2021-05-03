@@ -19,6 +19,28 @@ class Menadzer extends UserUnspecificControler{
         ]);
     }
     
+    public function myProfile() {
+        
+        $model = new MenadzerModel();
+        $menadzer = $model->getManagersByUsername($this->session->get('username'))[0];
+        
+        $brojProjekat = 0;
+        
+        $greska = $this->session->get('greska');
+        $poruka = $this->session->get('poruka');
+        
+        $this->session->set('greska', null);
+        $this->session->set('poruka', null);
+        
+        return view('manager-pages/profile', [
+            'menadzer' => $menadzer,
+            'brojProjekata' => $brojProjekat,
+            'myProfile' => true,
+            'greska' => $greska, 
+            'poruka' => $poruka
+        ]);
+    }
+    
     public function project() {
         return "Project page";
     }
