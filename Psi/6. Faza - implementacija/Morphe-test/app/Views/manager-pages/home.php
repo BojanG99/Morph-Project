@@ -139,7 +139,7 @@
                                             <tr>
                                                 <td>Programer: </td>
                                                 <td>{$programer->korisnicko_ime}</td>
-                                                <td><a href='".$urlProfila."'>Profil</a></td>
+                                                <td><a href='".$urlProfila."' target='_blank'>Profil</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Ocena: </td>

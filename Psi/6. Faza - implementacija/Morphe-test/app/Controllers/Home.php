@@ -9,23 +9,46 @@ use App\Models\ProgramerModel;
 use App\Models\KorisnikModel;
 use App\Models\KorisnikNaCekanjuModel;
 
+/**
+ * Kontroler za prijavljivanje i registrovanje
+ * 
+ * @version 1.0
+ * @author Vlade Vulovic <vv180421>
+ */
 class Home extends BaseController{
     
         private $minPasswordLenght = 6;
     
     
+        /**
+         * 
+         * @return html-page
+         */
 	public function index(){
             return view("home/loginpage");  
 	}
         
+        /**
+         * @param string $greska Opciono - poruka o gresci
+         * @return html-page
+         */
         public function loginpage($greska = null) {
             return view("home/loginpage", ['greska' => $greska]);
         }
         
+        /**
+         * @param string $greska Opciono - poruka o gresci
+         * @param string $greska Opciono - poruka o uspesnom slanju registracije
+         * @return html-page
+         */
         public function registerpage($greska = null , $uspesno = null) {
             return view("home/registerpage", ['greska' => $greska , 'uspesno' => $uspesno]);
         }
         
+        /**
+         * Funkcija se poziva pri logovanju korisnika - provera korisnickog imena i lozinke
+         * @return html-page
+         */
         public function login() {
             $username = $this->request->getVar('usernameinput');
             $password = $this->request->getVar('passwordinput');
@@ -90,6 +113,10 @@ class Home extends BaseController{
             return $this->loginpage($greska);
         }
         
+        /**
+         * Funkcija se poziva pri slanju registracije - provera ulaznih parametara
+         * @return html-page
+         */
         public function register() {
             
             $username = $this->request->getVar('usernameinput');

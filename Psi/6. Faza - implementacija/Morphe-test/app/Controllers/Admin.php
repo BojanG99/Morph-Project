@@ -8,8 +8,18 @@ use App\Models\ProgramerModel;
 use App\Models\MenadzerModel;
 use App\Models\KorisnikModel;
 
+/**
+ * Kontroler za admina
+ * 
+ * @version 1.0
+ * @author Vlade Vulovic <vv180421>
+ */
 class Admin extends UserUnspecificControler{
 
+    /**
+    * Prikazuje pocetnu stranicu
+    * @return html-page
+    */
     public function index() {
         $korisnkiNaCekanjuModel = new KorisnikNaCekanjuModel();
         $korisniciNaCekanju = $korisnkiNaCekanjuModel->getAllUsersOnHold();
@@ -32,6 +42,11 @@ class Admin extends UserUnspecificControler{
         ]);
     }
     
+    /**
+    *  Poziva se prilikom prihvatanja zahteva korisnika
+     * @param string $username Korisnicko ime korisnika kome je odobrena registracija
+    * @return html-page
+    */
     public function acceptUser($username) {
         $korisnkiNaCekanjuModel = new KorisnikNaCekanjuModel();
         $korisnici = $korisnkiNaCekanjuModel->getUsersOnHoldByUsername($username);
@@ -72,6 +87,11 @@ class Admin extends UserUnspecificControler{
         return redirect()->to(site_url('Admin/index'));
     }
     
+    /**
+    *  Poziva se prilikom odbijanja zahteva korisnika
+     * @param string $username Korisnicko ime korisnika kome je odbijena registracija
+    * @return html-page
+    */
     public function declineUser($username) {
         $korisnkiNaCekanjuModel = new KorisnikNaCekanjuModel();
         $korisnici = $korisnkiNaCekanjuModel->getUsersOnHoldByUsername($username);
@@ -87,6 +107,11 @@ class Admin extends UserUnspecificControler{
         return redirect()->to(site_url('Admin/index'));
     }
     
+    /**
+    *  Poziva se prilikom brisanja korisnika iz baze
+     * @param string $username Korisnicko ime korisnika koji se brise
+    * @return html-page
+    */
     public function deleteUser($username) {
         
         $deleted = -1;

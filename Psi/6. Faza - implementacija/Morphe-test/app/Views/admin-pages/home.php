@@ -105,9 +105,10 @@
                             
                             foreach ($programeri as $korisnik) {
                                 $urlObrisi = site_url('Admin/deleteUser')."/".$korisnik->korisnicko_ime;
+                                $urlProfile = site_url("Admin/profile/{$korisnik->korisnicko_ime}");
                              echo "   <tr>
                                         <td>{$idKor}</td>
-                                        <td>{$korisnik->korisnicko_ime}</td>
+                                        <td><a href=".$urlProfile." target='_blank' style='color:black'>{$korisnik->korisnicko_ime}</a></td>
                                         <td>{$korisnik->email}</td>
                                         <td>{$korisnik->broj_telefona}</td>
                                         <td>Programer</td>
@@ -121,9 +122,10 @@
                             
                             foreach ($menadzeri as $korisnik) {
                                 $urlObrisi = site_url('Admin/deleteUser')."/".$korisnik->korisnicko_ime;
+                                $urlProfile = site_url("Admin/profile/{$korisnik->korisnicko_ime}");
                              echo "   <tr>
                                         <td>{$idKor}</td>
-                                        <td>{$korisnik->korisnicko_ime}</td>
+                                        <td><a href=".$urlProfile." target='_blank' style='color:black'>{$korisnik->korisnicko_ime}</a></td>
                                         <td>{$korisnik->email}</td>
                                         <td>{$korisnik->broj_telefona}</td>
                                         <td>Menadzer</td>
@@ -137,9 +139,10 @@
                             
                             foreach ($klijenti as $korisnik) {
                                 $urlObrisi = site_url('Admin/deleteUser')."/".$korisnik->korisnicko_ime;
+                                $urlProfile = site_url("Admin/profile/{$korisnik->korisnicko_ime}");
                              echo "   <tr>
                                         <td>{$idKor}</td>
-                                        <td>{$korisnik->korisnicko_ime}</td>
+                                        <td><a href=".$urlProfile." target='_blank' style='color:black'>{$korisnik->korisnicko_ime}</a></td>
                                         <td>{$korisnik->email}</td>
                                         <td>{$korisnik->broj_telefona}</td>
                                         <td>Klijent</td>

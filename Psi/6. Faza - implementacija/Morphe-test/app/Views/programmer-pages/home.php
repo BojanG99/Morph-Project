@@ -60,7 +60,7 @@ $brojKonkursaURedu = 2;
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="<?php echo site_url('Programer/index')?>">Pocetna</a>
                         <a class="dropdown-item" href="<?php echo site_url('Programer/project')?>">Projekat</a>
-                        <a class="dropdown-item" href="<?php echo site_url('Programer/chat')?>">Razgovori</a>
+                    <!--    <a class="dropdown-item" href="<?php echo site_url('Programer/chat')?>">Razgovori</a> -->
                         <a class="dropdown-item" href="<?php echo site_url('Programer/logout')?>">Izloguj se</a>
                     </div>
                 </div>
@@ -121,9 +121,9 @@ $brojKonkursaURedu = 2;
                                 echo "<td style='margin: 1%; '>
                                         <table class='table borderless' style='background-color: lightsteelblue; '>
                                             <tr>
-                                                <td>Klijent: </td>
+                                                <td>Menadzer: </td>
                                                 <td>{$konkurs->korisnicko_ime}</td>
-                                                <td><a href='"."{$urlKorisnika}"."'>Profile</a></td>
+                                                <td><a href='"."{$urlKorisnika}"."' target='_blank'>Profile</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Jezik: </td>

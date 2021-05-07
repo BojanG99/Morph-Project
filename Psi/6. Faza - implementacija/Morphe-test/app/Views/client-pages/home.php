@@ -31,9 +31,9 @@
                 <img src="<?php echo baseUrlWithoutPublic."images/logo.png"?>" style="height: 90px;"> 
             </div>
             
-          <!--  <div class="col-1 offset-4" style="text-align: center; vertical-align: middle;">
+      <!--      <div class="col-1 offset-4" style="text-align: center; vertical-align: middle;">
                 <img src="<?php echo baseUrlWithoutPublic."images/mailbox.png"?>" style="height: 60px;"> 
-            </div> -->
+            </div>  -->
 
             <div class="col-1 offset-8 offset-md-9" style="text-align: center;">
                 <a href="<?php echo site_url('Klijent/myProfile/Klijent')?>"><img src="
@@ -126,12 +126,13 @@
                             echo "<table style='width: 100%'>";
                             foreach($menadzeri as $menadzer) {
                                 $urlProfila = site_url('Klijent/profile/').$menadzer->korisnicko_ime;
+                                $urlChat = site_url('Klijent/chat/').$menadzer->korisnicko_ime;
                                 if ($count == 0) echo "<tr style='display: flex; justify-content: space-around'>";
                                 echo "<td >
                                         <table class='table borderless' style='background-color: lightsteelblue; '>
                                             <tr>
                                                 <td>Menadzer: </td>
-                                                <td><a href='{$urlProfila}' style='color: black'>{$menadzer->korisnicko_ime}</a></td>
+                                                <td><a href='".$urlProfila."' target='_blank' style='color: black'>{$menadzer->korisnicko_ime}</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Ocena: </td>
@@ -139,7 +140,7 @@
                                             </tr>
                                             <tr >
                                                 <td colspan='2' style='text-align:center'>
-                                                    <a href='' style='text-decoration: underline'>Posalji poruku</a> 
+                                                    <a href='{$urlChat}' style='text-decoration: underline'>Posalji poruku</a> 
                                             </td>
 
                                     </tr>

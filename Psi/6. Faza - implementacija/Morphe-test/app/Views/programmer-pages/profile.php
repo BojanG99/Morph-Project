@@ -57,7 +57,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="<?php echo site_url('Programer/index')?>">Pocetna</a>
                         <a class="dropdown-item" href="<?php echo site_url('Programer/project')?>">Projekat</a>
-                        <a class="dropdown-item" href="<?php echo site_url('Programer/chat')?>">Razgovori</a>
+                        <!--    <a class="dropdown-item" href="<?php echo site_url('Programer/chat')?>">Razgovori</a> -->
                         <a class="dropdown-item" href="<?php echo site_url('Programer/logout')?>">Izloguj se</a>
                     </div>
                 </div>

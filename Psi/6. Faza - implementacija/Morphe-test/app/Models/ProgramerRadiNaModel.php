@@ -9,6 +9,6 @@ class ProgramerRadiNaModel extends Model
     protected $table      = 'programer_radi_na';
     protected $primaryKey = 'idProgramera,idProjekta';
     protected $returnType = 'object';
-    protected $allowedFields = ['idProgramera', 'idProjekta' ];
+    protected $allowedFields = ['idProgramera', 'idProjekta' ,'status'];
     
 }

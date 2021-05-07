@@ -6,6 +6,7 @@ use App\Models\ProgramerModel;
 use App\Models\MenadzerModel;
 use App\Models\KonkursModel;
 use App\Models\PozvanNaKonkursModel;
+use App\Models\ProjekatModel;
 
 class Menadzer extends UserUnspecificControler{
 
@@ -24,7 +25,9 @@ class Menadzer extends UserUnspecificControler{
         $model = new MenadzerModel();
         $menadzer = $model->getManagersByUsername($this->session->get('username'))[0];
         
-        $brojProjekat = 0;
+        $modelProjekat = new ProjekatModel();
+        
+        $brojProjekat = count($modelProjekat->getAllProjectsForManager($menadzer->korisnicko_ime));
         
         $greska = $this->session->get('greska');
         $poruka = $this->session->get('poruka');
@@ -45,8 +48,8 @@ class Menadzer extends UserUnspecificControler{
         return "Project page";
     }
     
-    public function chat() {
-        return "Chat page";
+    public function chat($username = null) {
+        return "caht sa {$username}";
     }
     
     public function pretraziProgramere() {
