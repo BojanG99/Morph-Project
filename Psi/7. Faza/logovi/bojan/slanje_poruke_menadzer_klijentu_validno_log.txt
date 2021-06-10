@@ -1,0 +1,89 @@
+1.
+open on http://localhost/Morphe-test/public/index.php OK
+23:31:52
+2.
+setWindowSize on 866x692 OK
+23:31:52
+3.
+click on id=usernameinput OK
+23:31:52
+4.
+type on id=usernameinput with value menadzer1 OK
+23:31:52
+5.
+type on id=passwordinput with value lozinka123 OK
+23:31:53
+6.
+click on css=.btn OK
+23:31:53
+7.
+verifyText on css=.col-1 > p with value menadzer1 OK
+23:31:53
+8.
+click on css=.dropdown-toggle OK
+23:31:54
+9.
+click on linkText=Razgovori OK
+23:31:54
+10.
+verifyText on css=h4 with value Poruke OK
+23:31:54
+11.
+click on css=a:nth-child(2) .chat_ib OK
+23:31:55
+12.
+click on id=porukica OK
+23:31:55
+13.
+type on id=porukica with value Dobar dan. OK
+23:31:56
+14.
+click on id=msg_send_btn OK
+23:31:56
+15.
+click on css=.inbox_chat OK
+23:31:56
+16.
+click on css=.btn OK
+23:31:57
+17.
+click on linkText=Izloguj se OK
+23:31:57
+18.
+click on id=usernameinput OK
+23:31:58
+19.
+type on id=usernameinput with value klijent2 OK
+23:31:58
+20.
+type on id=passwordinput with value lozinka123 OK
+23:31:59
+21.
+click on css=.btn OK
+23:31:59
+22.
+click on css=.dropdown-toggle OK
+23:31:59
+23.
+click on linkText=Razgovori OK
+23:32:00
+24.
+click on css=a:nth-child(2) h5 OK
+23:32:00
+25.
+mouseOver on css=a:nth-child(2) > .chat_list OK
+23:32:01
+26.
+mouseOut on css=a:nth-child(2) > .chat_list OK
+23:32:01
+27.
+verifyText on css=p:nth-child(1) with value Dobar dan. OK
+23:32:01
+28.
+click on css=.btn OK
+23:32:02
+29.
+click on linkText=Izloguj se OK
+23:32:02
+'slanje_poruke_menadzer_klijentu_validno' completed successfully
+23:32:02

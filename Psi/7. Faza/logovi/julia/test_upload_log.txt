@@ -1,0 +1,38 @@
+1.
+open on http://localhost:8080/index.php OK
+23:48:35
+2.
+setWindowSize on 688x716 OK
+23:48:35
+3.
+click on id=usernameinput OK
+23:48:35
+4.
+type on id=usernameinput with value programer1 OK
+23:48:37
+5.
+click on id=passwordinput OK
+23:48:37
+6.
+type on id=passwordinput with value lozinka OK
+23:48:37
+7.
+click on css=.btn OK
+23:48:37
+8.
+click on css=.dropdown-toggle OK
+23:48:38
+9.
+click on linkText=Projekat OK
+23:48:38
+10.
+click on xpath=//div[@id='1']/div/div/div/div[2]/ul/li/a OK
+23:48:38
+11.
+assertElementPresent on name=save OK
+23:48:39
+12.
+click on name=save OK
+23:48:40
+'test8_upload' completed successfully
+23:48:40

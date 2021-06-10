@@ -1,0 +1,77 @@
+1.
+open on http://localhost:8080/index.php OK
+23:36:05
+2.
+setWindowSize on 688x716 OK
+23:36:05
+3.
+click on id=usernameinput OK
+23:36:05
+4.
+type on id=usernameinput with value menadzer1 OK
+23:36:06
+5.
+click on id=passwordinput OK
+23:36:07
+6.
+type on id=passwordinput with value lozinka123 OK
+23:36:08
+7.
+click on css=.btn OK
+23:36:09
+8.
+click on css=.dropdown-toggle OK
+23:36:10
+9.
+click on linkText=Projekat OK
+23:36:11
+10.
+click on css=a:nth-child(2) > .btn OK
+23:36:11
+11.
+click on name=file OK
+23:36:11
+12.
+type on name=file with value test.php OK
+23:36:12
+13.
+click on name=path OK
+23:36:12
+14.
+type on name=path with value test/testneki/ OK
+23:36:12
+15.
+click on name=option OK
+23:36:12
+16.
+select on name=option with value label=8 OK
+23:36:12
+17.
+click on name=option OK
+23:36:12
+18.
+click on name=tasktext OK
+23:36:13
+19.
+type on name=tasktext with value ovo je neki opis zadatka OK
+23:36:13
+20.
+click on css=button:nth-child(5) OK
+23:36:13
+21.
+click on css=.dropdown-toggle OK
+23:36:13
+22.
+click on linkText=Projekat OK
+23:36:14
+23.
+click on xpath=//div[@id='8']/div/div/div/div OK
+23:36:14
+24.
+click on xpath=//div[@id='8']/div/div/div/div OK
+23:36:14
+25.
+assertText on xpath=//div[@id='8']/div/div/div/div with value ovo je neki opis zadatka OK
+23:36:14
+'test1_uspesno' completed successfully
+23:36:14

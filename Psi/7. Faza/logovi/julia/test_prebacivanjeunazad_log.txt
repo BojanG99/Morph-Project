@@ -1,0 +1,32 @@
+1.
+open on http://localhost:8080/index.php OK
+23:47:21
+2.
+setWindowSize on 688x716 OK
+23:47:21
+3.
+click on id=usernameinput OK
+23:47:21
+4.
+type on id=usernameinput with value programer1 OK
+23:47:24
+5.
+click on id=passwordinput OK
+23:47:24
+6.
+type on id=passwordinput with value lozinka OK
+23:47:24
+7.
+click on css=.btn OK
+23:47:24
+8.
+click on css=.dropdown-toggle OK
+23:47:24
+9.
+click on linkText=Projekat OK
+23:47:25
+10.
+dragAndDropToObject on id=1 with value id=div2 OK
+23:47:25
+'test7_prebacivanjeunazad' completed successfully
+23:47:26

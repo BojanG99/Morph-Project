@@ -1,0 +1,219 @@
+23:51:52
+1.
+open on /index.php OK
+23:51:52
+2.
+setWindowSize on 1134x840 OK
+23:51:52
+3.
+click on linkText=Nemas nalog? Registruj se OK
+23:51:52
+4.
+click on id=usernameinput OK
+23:51:53
+5.
+type on id=usernameinput with value novi OK
+23:51:54
+6.
+type on id=passwordinput with value lozinka OK
+23:51:54
+7.
+type on id=passwordagaininput with value lozinka OK
+23:51:54
+8.
+type on id=emailinput with value email@gmail.com OK
+23:51:54
+9.
+type on id=numberinput with value 062253334 OK
+23:51:54
+10.
+click on css=.btn OK
+23:51:54
+11.
+click on id=login OK
+23:51:55
+12.
+click on id=usernameinput OK
+23:51:55
+13.
+type on id=usernameinput with value admin OK
+23:51:56
+14.
+click on id=passwordinput OK
+23:51:56
+15.
+type on id=passwordinput with value admin OK
+23:51:56
+16.
+sendKeys on id=passwordinput with value ${KEY_ENTER} OK
+23:51:56
+17.
+click on css=.table tr:nth-child(3) > td:nth-child(2) OK
+23:51:57
+18.
+click on css=.table tr:nth-child(3) > td:nth-child(2) OK
+23:51:58
+19.
+doubleClick on css=.table tr:nth-child(3) > td:nth-child(2) OK
+23:51:58
+20.
+click on css=.table tr:nth-child(2) > td:nth-child(2) OK
+23:51:58
+21.
+click on css=.table tr:nth-child(2) > td:nth-child(2) OK
+23:51:58
+22.
+doubleClick on css=.table tr:nth-child(2) > td:nth-child(2) OK
+23:51:58
+23.
+verifyText on css=.table tr:nth-child(2) > td:nth-child(2) with value novi OK
+23:51:59
+'Uspesno registrovanje' completed successfully
+23:51:59
+Running 'neuspesno registrovanje - los format broja'
+23:51:59
+1.
+open on / OK
+23:51:59
+2.
+setWindowSize on 1134x840 OK
+23:52:00
+3.
+click on linkText=Nemas nalog? Registruj se OK
+23:52:00
+4.
+click on id=usernameinput OK
+23:52:00
+5.
+type on id=usernameinput with value noviKorisnik2 OK
+23:52:01
+6.
+type on id=passwordinput with value lozinka OK
+23:52:01
+7.
+type on id=passwordagaininput with value lozinka OK
+23:52:01
+8.
+type on id=emailinput with value sdasafsa@gmail.com OK
+23:52:02
+9.
+type on id=numberinput with value 43156 OK
+23:52:02
+10.
+click on css=.btn OK
+23:52:02
+11.
+click on css=tr:nth-child(2) > th OK
+23:52:02
+12.
+click on css=tr:nth-child(2) > th OK
+23:52:03
+13.
+doubleClick on css=tr:nth-child(2) > th OK
+23:52:03
+14.
+click on css=tr:nth-child(2) > th OK
+23:52:03
+15.
+verifyText on css=tr:nth-child(2) > th with value Broj telefona nije u ispravnom formatu OK
+23:52:03
+'neuspesno registrovanje - los format broja' completed successfully
+23:52:03
+Running 'neuspesno registrovanje - los format emaila'
+23:52:03
+1.
+open on / OK
+23:52:04
+2.
+setWindowSize on 1134x840 OK
+23:52:04
+3.
+click on linkText=Nemas nalog? Registruj se OK
+23:52:04
+4.
+click on id=usernameinput OK
+23:52:05
+5.
+type on id=usernameinput with value noviKorisnik2 OK
+23:52:06
+6.
+type on id=passwordinput with value lozinka OK
+23:52:06
+7.
+type on id=passwordagaininput with value lozinka OK
+23:52:06
+8.
+type on id=emailinput with value weaewea OK
+23:52:06
+9.
+type on id=numberinput with value 062244442 OK
+23:52:07
+10.
+click on css=.btn OK
+23:52:07
+11.
+click on css=tbody th OK
+23:52:07
+12.
+click on css=tbody th OK
+23:52:07
+13.
+doubleClick on css=tbody th OK
+23:52:07
+14.
+click on css=tbody th OK
+23:52:07
+15.
+verifyText on css=tbody th with value Registruj se! OK
+23:52:08
+'neuspesno registrovanje - los format emaila' completed successfully
+23:52:08
+Running 'neuspesno registrovanje - nisu iste lozinke'
+23:52:08
+1.
+open on / OK
+23:52:08
+2.
+setWindowSize on 1134x840 OK
+23:52:08
+3.
+click on linkText=Nemas nalog? Registruj se OK
+23:52:08
+4.
+click on id=usernameinput OK
+23:52:09
+5.
+type on id=usernameinput with value noviKorisnik2 OK
+23:52:10
+6.
+type on id=passwordinput with value lozinka OK
+23:52:10
+7.
+type on id=passwordagaininput with value lokinkga OK
+23:52:10
+8.
+type on id=emailinput with value dsakodsa@gmail.com OK
+23:52:10
+9.
+type on id=numberinput with value 062253333 OK
+23:52:11
+10.
+click on css=.btn OK
+23:52:11
+11.
+click on css=tr:nth-child(2) > th OK
+23:52:11
+12.
+click on css=tr:nth-child(2) > th OK
+23:52:11
+13.
+doubleClick on css=tr:nth-child(2) > th OK
+23:52:12
+14.
+click on css=tr:nth-child(2) > th OK
+23:52:12
+15.
+verifyText on css=tr:nth-child(2) > th with value Lozinka i ponovljena lozinka nisu iste! OK
+23:52:12
+'neuspesno registrovanje - nisu iste lozinke' completed successfully
+23:52:12

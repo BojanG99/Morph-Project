@@ -1,0 +1,101 @@
+1.
+open on http://localhost/Morphe-test/public/index.php OK
+23:20:14
+2.
+setWindowSize on 866x692 OK
+23:20:15
+3.
+click on id=usernameinput OK
+23:20:16
+4.
+type on id=usernameinput with value klijent1 OK
+23:20:17
+5.
+click on id=passwordinput OK
+23:20:18
+6.
+type on id=passwordinput with value lozinka123 OK
+23:20:19
+7.
+click on css=.btn OK
+23:20:20
+8.
+click on css=.dropdown-toggle OK
+23:20:21
+9.
+click on id=header OK
+23:20:23
+10.
+click on css=.col-1 > p OK
+23:20:24
+11.
+verifyText on css=.col-1 > p with value klijent1 OK
+23:20:25
+12.
+click on css=.dropdown-toggle OK
+23:20:26
+13.
+click on linkText=Razgovori OK
+23:20:27
+14.
+verifyText on css=h4 with value Poruke OK
+23:20:28
+15.
+click on css=a:nth-child(2) h5 OK
+23:20:30
+16.
+click on id=porukica OK
+23:20:31
+17.
+type on id=porukica with value Cao OK
+23:20:32
+18.
+click on id=msg_send_btn OK
+23:20:33
+19.
+verifyText on css=p:nth-child(1) with value Cao OK
+23:20:34
+20.
+click on css=.btn OK
+23:20:36
+21.
+click on linkText=Izloguj se OK
+23:20:37
+22.
+click on css=.table tr:nth-child(2) > td OK
+23:20:38
+23.
+click on id=usernameinput OK
+23:20:40
+24.
+type on id=usernameinput with value menadzer2 OK
+23:20:41
+25.
+type on id=passwordinput with value lozinka123 OK
+23:20:42
+26.
+click on css=.btn OK
+23:20:43
+27.
+verifyText on css=.col-1 > p with value menadzer2 OK
+23:20:44
+28.
+click on css=.dropdown-toggle OK
+23:20:46
+29.
+click on linkText=Razgovori OK
+23:20:47
+30.
+click on css=a:nth-child(2) .chat_date OK
+23:20:48
+31.
+verifyText on css=p:nth-child(1) with value Cao OK
+23:20:49
+32.
+click on css=.btn OK
+23:20:51
+33.
+click on linkText=Izloguj se OK
+23:20:52
+'slanje_poruke_klijent_menadzeru' completed successfully
+23:20:52

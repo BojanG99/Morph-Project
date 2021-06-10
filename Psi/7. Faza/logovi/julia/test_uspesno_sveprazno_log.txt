@@ -1,0 +1,50 @@
+1.
+open on http://localhost:8080/index.php OK
+23:40:34
+2.
+setWindowSize on 688x716 OK
+23:40:34
+3.
+click on css=.table tr:nth-child(2) > td OK
+23:40:34
+4.
+click on id=usernameinput OK
+23:40:36
+5.
+type on id=usernameinput with value menadzer1 OK
+23:40:37
+6.
+click on id=passwordinput OK
+23:40:38
+7.
+type on id=passwordinput with value lozinka123 OK
+23:40:39
+8.
+click on css=.btn OK
+23:40:40
+9.
+click on css=.dropdown-toggle OK
+23:40:41
+10.
+click on linkText=Projekat OK
+23:40:42
+11.
+click on css=a:nth-child(2) > .btn OK
+23:40:43
+12.
+click on name=file OK
+23:40:44
+13.
+click on css=button:nth-child(5) OK
+23:40:45
+14.
+click on css=.dropdown-toggle OK
+23:40:46
+15.
+click on linkText=Projekat OK
+23:40:47
+16.
+assertElementPresent on css=#\31 2 .social-links OK
+23:40:48
+'test3_neuspesno_sveprazno' completed successfully
+23:40:49

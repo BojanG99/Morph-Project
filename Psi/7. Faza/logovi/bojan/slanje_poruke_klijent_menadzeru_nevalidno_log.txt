@@ -1,0 +1,47 @@
+1.
+open on http://localhost/Morphe-test/public/index.php OK
+23:24:12
+2.
+setWindowSize on 866x692 OK
+23:24:12
+3.
+click on id=usernameinput OK
+23:24:12
+4.
+type on id=usernameinput with value klijent1 OK
+23:24:12
+5.
+click on id=passwordinput OK
+23:24:12
+6.
+type on id=passwordinput with value lozinka123 OK
+23:24:12
+7.
+click on css=.btn OK
+23:24:12
+8.
+verifyText on css=.col-1 > p with value klijent1 OK
+23:24:13
+9.
+click on css=.dropdown-toggle OK
+23:24:13
+10.
+click on linkText=Razgovori OK
+23:24:13
+11.
+click on css=a:nth-child(3) h5 OK
+23:24:13
+12.
+click on id=msg_send_btn OK
+23:24:14
+13.
+verifyText on css=h1:nth-child(1) with value Greska! Prazna poruka. OK
+23:24:15
+14.
+click on css=.btn OK
+23:24:15
+15.
+click on linkText=Izloguj se OK
+23:24:15
+'slanje_poruke_klijent_menadzeru_nevalidno' completed successfully
+23:24:15

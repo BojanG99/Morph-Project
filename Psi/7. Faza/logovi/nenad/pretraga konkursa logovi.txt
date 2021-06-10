@@ -1,0 +1,148 @@
+1.
+open on /index.php/Home/index OK
+23:53:19
+2.
+setWindowSize on 1134x840 OK
+23:53:19
+3.
+click on id=usernameinput OK
+23:53:19
+4.
+type on id=usernameinput with value jeca OK
+23:53:20
+5.
+click on id=passwordinput OK
+23:53:20
+6.
+type on id=passwordinput with value lozinka OK
+23:53:20
+7.
+sendKeys on id=passwordinput with value ${KEY_ENTER} OK
+23:53:20
+8.
+click on css=.btn-dark OK
+23:53:21
+9.
+click on css=.table tr:nth-child(1) > td:nth-child(2) OK
+23:53:21
+10.
+click on css=.table tr:nth-child(1) > td:nth-child(2) OK
+23:53:22
+11.
+doubleClick on css=.table tr:nth-child(1) > td:nth-child(2) OK
+23:53:22
+12.
+verifyText on css=.table tr:nth-child(1) > td:nth-child(2) with value menadzer2 OK
+23:53:23
+'Uspesna pretraga konkursa' completed successfully
+23:53:23
+Running 'pretraga konkursa - jezik unet'
+23:53:23
+1.
+open on / OK
+23:53:23
+2.
+setWindowSize on 1134x840 OK
+23:53:23
+3.
+click on id=usernameinput OK
+23:53:24
+4.
+type on id=usernameinput with value jeca OK
+23:53:24
+5.
+click on id=passwordinput OK
+23:53:25
+6.
+click on id=passwordinput OK
+23:53:25
+7.
+doubleClick on id=passwordinput OK
+23:53:25
+8.
+type on id=passwordinput with value lozinka OK
+23:53:25
+9.
+sendKeys on id=passwordinput with value ${KEY_ENTER} OK
+23:53:25
+10.
+click on name=programskiJezik OK
+23:53:26
+11.
+type on name=programskiJezik with value php OK
+23:53:26
+12.
+click on css=.btn-dark OK
+23:53:26
+13.
+click on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:26
+14.
+click on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:27
+15.
+doubleClick on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:27
+16.
+verifyText on css=td tr:nth-child(1) > td:nth-child(1) with value Menadzer: OK
+23:53:27
+'pretraga konkursa - jezik unet' completed successfully
+23:53:28
+Running 'pretraga konkursa - prefix jezika unet'
+23:53:28
+1.
+open on / OK
+23:53:28
+2.
+setWindowSize on 1134x840 OK
+23:53:28
+3.
+click on css=.table tr:nth-child(2) > td OK
+23:53:28
+4.
+click on id=usernameinput OK
+23:53:29
+5.
+type on id=usernameinput with value jeca OK
+23:53:29
+6.
+click on id=passwordinput OK
+23:53:29
+7.
+click on id=passwordinput OK
+23:53:30
+8.
+doubleClick on id=passwordinput OK
+23:53:30
+9.
+type on id=passwordinput with value lozinka OK
+23:53:30
+10.
+click on css=.btn OK
+23:53:30
+11.
+click on name=programskiJezik OK
+23:53:30
+12.
+type on name=programskiJezik with value p OK
+23:53:31
+13.
+click on css=html OK
+23:53:31
+14.
+click on css=.btn-dark OK
+23:53:31
+15.
+click on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:32
+16.
+click on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:32
+17.
+doubleClick on css=td tr:nth-child(1) > td:nth-child(1) OK
+23:53:32
+18.
+verifyText on css=td tr:nth-child(1) > td:nth-child(1) with value Menadzer: OK
+23:53:33
+'pretraga konkursa - prefix jezika unet' completed successfully
+23:53:33
