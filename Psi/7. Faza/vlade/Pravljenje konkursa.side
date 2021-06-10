@@ -1,0 +1,1607 @@
+{
+  "id": "d6f3f0d7-1c23-46dd-ad5f-13ee60840b66",
+  "version": "2.0",
+  "name": "Pravljenje konkursa",
+  "url": "http://localhost/Morphe-testBETA/public/",
+  "tests": [{
+    "id": "c46bd2ab-d24f-43f2-b50b-e785542f1f17",
+    "name": "1. Neuspesno pravljenje konkursa - nisu sva polja unesena",
+    "commands": [{
+      "id": "86fa17d8-a599-4be1-91bc-a25a57c40b13",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1159675-473c-4a89-b932-4ec830cacc7c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa5be95b-b561-4dda-8fd6-4013c6c7ef39",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "797cb7f5-bf5a-4453-acfc-dd9197f76de2",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "571aa788-87ba-46a6-9e09-bfaca94cce5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de006591-cc58-4410-b967-6a74ed536f0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "03c5fddc-0ae6-407e-85d9-da8d8a5987c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9148c3a8-5d72-4a91-931a-3b8c11a39aa1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe2311f-96bf-4cae-9403-c6aa110bf685",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0042bf8a-e2ff-4185-a2d5-7c5b4aea0251",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c1bfb8-3cc5-4816-851a-f5054774658c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": "Napravi konkurs"
+    }, {
+      "id": "0102ed2f-0861-4e9e-b0c0-8b9e5e3f6ba2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "141ad02b-cc1c-4697-b688-7fcabd05eaa4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efb50287-8c7c-4d06-946e-1e6b3017b922",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a5cd12da-86ba-41fc-b7d6-adfa1a4cf25c",
+    "name": "2. Neuspesno pravljenje konkursa - datum nije u dobro formatu",
+    "commands": [{
+      "id": "9ded3a00-24ca-4129-b7fa-71834c3b794a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c28b8718-f8e7-4e16-b75a-69fb666d6c00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96d38e8c-0ef8-4b02-8c83-0c7d2086f1cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "722c33d8-de6b-495a-b676-6f666492333f",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "c67d277c-9b96-4dfb-911a-de3c33067620",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01310218-7af9-4dbd-95ee-455eafa57ad6",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "a7451d7e-b326-42af-b63e-b253b513fa41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6579c467-8aef-4b33-b140-bf71fabccb20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a98fb86e-4f39-4ac9-894f-aec88cc88956",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad09e6f6-06c7-4eb8-bfbf-abdc662529b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle1",
+      "targets": [
+        ["id=vehicle1", "id"],
+        ["name=javaCheckbox", "name"],
+        ["css=#vehicle1", "css:finder"],
+        ["xpath=//input[@id='vehicle1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45af660f-82b9-45c5-b355-caf866a061bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle3",
+      "targets": [
+        ["id=vehicle3", "id"],
+        ["name=phpCheckbox", "name"],
+        ["xpath=//input[@id='vehicle3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b21aeab9-0d26-413e-af86-d34872193741",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f71960-39cf-483e-bf23-dac3001737c0",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Konkurs u Javi i Php"
+    }, {
+      "id": "4712d172-b07c-4040-bc90-f249f8fe9ade",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2e57323-4d15-447b-a858-b64bd4583f26",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "dsasda"
+    }, {
+      "id": "7fe3d5f3-abed-4fba-9f1f-54b9c9b216aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6135c39d-a7af-4760-8eb9-0c1c5b563722",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": "Napravi konkurs"
+    }, {
+      "id": "92b5543c-ee34-4ac0-8d99-6c07a96575e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bce6641e-e271-44ee-8dbb-684f546f32d4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3fd14a-9b3b-4a6e-97de-1320e6d1fc15",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "62af2900-6df7-4af2-b3fa-635a55e1bbac",
+    "name": "3. Neuspesno pravljenje konkursa - datum ne postoji",
+    "commands": [{
+      "id": "742fe215-5a71-4a7f-b554-305168d61ea9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca19bbf7-11a9-48b2-ab51-b2af04c9b457",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa0b82a-7b76-41b2-96d1-6c58e4d82dbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd931ab-a0fd-4b1f-8042-496393d9f26f",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "22b78989-3867-42ae-9ed3-245c3686c7ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8218e55-f976-486c-8c91-80d01ef4f3e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "e0eff5c0-d67b-4e0d-a0a3-c0b430161065",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d00c4b6-02a2-4035-8d5c-041be26c2642",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e466745-848b-4f6a-8b6a-273e73ba7102",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6940db47-0230-4b3b-9d29-6ac8a94b9165",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle2",
+      "targets": [
+        ["id=vehicle2", "id"],
+        ["name=javaScriptCheckbox", "name"],
+        ["css=#vehicle2", "css:finder"],
+        ["xpath=//input[@id='vehicle2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1e143f-560b-4518-8f2b-b487b2ec4911",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle1",
+      "targets": [
+        ["id=vehicle1", "id"],
+        ["name=javaCheckbox", "name"],
+        ["css=#vehicle1", "css:finder"],
+        ["xpath=//input[@id='vehicle1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e5613c-755d-4ec4-a337-63ba015c2867",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2252ce0e-a528-41b1-a5fa-948f49df1c02",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Tekst konkursa"
+    }, {
+      "id": "8b7d3600-9d48-4fe5-8343-8a6134e1d140",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f6fbb26-f338-4801-8205-c684ca6a6e9a",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-13-11 9:0:0"
+    }, {
+      "id": "cbec642e-34ca-401f-a2f1-9db07446d096",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4261173b-1025-4245-9564-7f00a69c3cc4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": "Napravi konkurs"
+    }, {
+      "id": "2f292386-997b-4589-a92b-017a38fbc439",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c37c8c-6359-401c-9b84-909a3844d1c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19298d99-aee5-42f7-a273-f076aa586b3d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "532ae1b9-695b-465c-876a-33202979f9bd",
+    "name": "4. Neuspesno pravljenje konkursa - vreme ne postoji",
+    "commands": [{
+      "id": "40b9a58d-1444-4e74-b44e-5c8c1707340f",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0329ca26-ec26-4f91-9f74-5904240ee39e",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "32b71cd7-d7da-4c97-9693-8f23e63f61e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "9001442c-590f-431c-9abf-95da27f9bbc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7670863-9286-427b-8987-b4eddf435729",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2e7eae-3ca5-4735-9c6d-047c1db00816",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "761c103a-a227-4a38-8afa-8d619cea6ff5",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle2",
+      "targets": [
+        ["id=vehicle2", "id"],
+        ["name=javaScriptCheckbox", "name"],
+        ["css=#vehicle2", "css:finder"],
+        ["xpath=//input[@id='vehicle2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc9a4744-ed16-47a4-aa2a-ff66ae919b49",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle1",
+      "targets": [
+        ["id=vehicle1", "id"],
+        ["name=javaCheckbox", "name"],
+        ["css=#vehicle1", "css:finder"],
+        ["xpath=//input[@id='vehicle1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4eba43d-1408-41bc-b166-e450b769bcba",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d606e00-9ab5-4763-a9cb-7e52dcb88bba",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Tekst konkursa"
+    }, {
+      "id": "fa348f78-cb73-4e4b-882d-7301199e432d",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "643d3a34-cb1c-45c0-942d-99e62de1acbd",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-11-05 09:65:03"
+    }, {
+      "id": "75f813da-feef-4777-8b32-efec35e7797e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9238be1-7b10-424a-8c50-098b84f4e4d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcace95b-3618-47b3-8673-599558296a3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56b834ef-2de2-4ade-b664-df17d90e3711",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Korisnici')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f48a2be-a0d7-4bee-9f9f-759b3f7e005b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2842ef7-b180-4277-b74e-f31a0a5c64f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5a72a7f-89a4-4da6-98c0-2c1372d8bfe7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c80f5202-2cc5-47a9-ad1e-07592469c89a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59c9ded0-f5fa-46a9-a168-60de8b11ab73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae93ded3-6767-4956-9f97-d98bada9a455",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889e43a7-11e1-4fb0-a599-f5bd590a06c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "0f4494ef-e98b-4100-9be3-5bedca37b585",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbec407a-aa87-408a-90e1-a17ff5a022ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "0d98fdeb-780c-4ef3-b8b0-4b430422eb99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2232d102-e6f1-425d-870e-718804e1d021",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c392ca3c-b289-4cfb-922f-eca87c280f8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e536f8-7658-4fb6-802d-24bdd682f50c",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle1",
+      "targets": [
+        ["id=vehicle1", "id"],
+        ["name=javaCheckbox", "name"],
+        ["css=#vehicle1", "css:finder"],
+        ["xpath=//input[@id='vehicle1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc506b16-209f-4cf2-9464-76b85b522297",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle3",
+      "targets": [
+        ["id=vehicle3", "id"],
+        ["name=phpCheckbox", "name"],
+        ["xpath=//input[@id='vehicle3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "092efe7a-56cf-49f7-a318-230e91fa196a",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b72dbebd-cfda-4522-aa3f-5b0f9f813f4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Tekst konkursa"
+    }, {
+      "id": "4f11cb3b-243b-4944-be3f-c85414c3bee2",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da9c2017-0090-41ec-9136-02793efebf53",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-5-18 9:72:11"
+    }, {
+      "id": "36189afe-f616-47b2-beb1-3b1289816b7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7337db2c-a857-46dc-8dd1-a8f2203558d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2db3fab-bb8d-400b-952a-f55c8e580e52",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01e404b3-1d66-4803-8ae0-deca95bf1b88",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Korisnici')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f62ea94-3ce1-45a2-9c3d-c121d33fb64f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "351a64ab-3d9d-407b-8039-4fe1ebb50900",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd1bfdc-eea0-4f6c-87d1-c5733b025724",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f9855204-b061-4462-9e13-71f9b14d696c",
+    "name": "5. Uspesno pravljenje konkursa",
+    "commands": [{
+      "id": "b8029212-cb8e-4a38-88ae-cc4e49f04d29",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66d2b411-7836-400b-81cc-38cb9e42a9b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2d21ab5-2790-4732-a5eb-3966c617efdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63a107ab-a66a-427b-b52d-252e6d9ff62d",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "2502e281-e10e-4274-9481-51218be15802",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18d0e91a-29c2-47a2-8a2e-99afa309cfcb",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "a9aed2a2-97ce-4e1e-b96a-5d1e464fbc53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb48a252-81c9-42f1-93c0-806e3271daf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef97442a-ed60-4001-97b1-96f8ee43fb69",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60b91974-d687-4723-8556-da548cd2c348",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle3",
+      "targets": [
+        ["id=vehicle3", "id"],
+        ["name=phpCheckbox", "name"],
+        ["xpath=//input[@id='vehicle3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f0b66af-ef59-4d79-82ac-a7627a136b00",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379629cb-3aaa-41c1-98f9-1fb772291ea2",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Tekst konkursa"
+    }, {
+      "id": "9af40270-8757-4f85-9542-29f72d52cb5f",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d12a47d-0967-4580-8735-f459a7efff3f",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-5-12 7:0:0"
+    }, {
+      "id": "fa250ef5-5296-4328-aae4-2a2824045142",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "086a0fd7-e010-4b36-89e6-e296d64f5aa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c78549c-b590-45a4-a167-26c38670d241",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "menadzer1"
+    }, {
+      "id": "b7d93854-c4f9-4fed-a36b-022db937d9d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acedfd4a-3e87-442a-9cf9-592ca3eb8bb0",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "5c8db9a6-6158-468b-b827-ceb294687530",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7572b78e-1686-4638-b6a8-ac7ec3d70c6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e71751-f3b0-44c3-bef7-01eac83aec0b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "895b3281-b705-4d82-a934-a9a1a6233623",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle1",
+      "targets": [
+        ["id=vehicle1", "id"],
+        ["name=javaCheckbox", "name"],
+        ["css=#vehicle1", "css:finder"],
+        ["xpath=//input[@id='vehicle1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead1015a-76cd-4b17-9521-996ce8e844fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=vehicle3",
+      "targets": [
+        ["id=vehicle3", "id"],
+        ["name=phpCheckbox", "name"],
+        ["xpath=//input[@id='vehicle3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb0314e-9d78-4c22-8c29-3873bcf3346f",
+      "comment": "",
+      "command": "click",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e725a887-22b9-4506-bb28-ba4fdf49c9da",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Tekst konkursa"
+    }, {
+      "id": "93b488c7-6aa6-41b3-b203-d5112b2a4f6a",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2ada52-06d4-4cc2-9769-5ec1d12f8249",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-09-05 09:00:00"
+    }, {
+      "id": "e21935cf-3afb-4dc4-a35e-9c5acb19614b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Napravi konkurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89e478d7-1c91-4864-9420-0661330d11a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "609aa0e6-f72b-40fb-85d8-704955fe1cbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projekat",
+      "targets": [
+        ["linkText=Projekat", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Projekat')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/project']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Projekat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18bf3c0-c6b9-410d-bc42-93b5fa1257ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Izaberite klijenta:')]", "xpath:innerText"]
+      ],
+      "value": "Izaberite klijenta:"
+    }, {
+      "id": "bfd96301-b1da-4f8a-8103-38f8067573f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Korisnici')]", "xpath:innerText"]
+      ],
+      "value": "Korisnici"
+    }, {
+      "id": "23f3849c-5769-4f4c-beb9-c7be7d70978f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "998e21c2-2e76-4a4b-81fd-29890a89b053",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Menadzer/logout']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "171f591e-c823-4603-9b7e-ed6f9501fc6b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "70bdd7e5-644b-4232-a365-d8f6ed8fc1e1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/Morphe-testBETA/public/"],
+  "plugins": []
+}

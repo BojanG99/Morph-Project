@@ -1,0 +1,981 @@
+{
+  "id": "90921739-5d2f-464d-bb0c-195fcd388717",
+  "version": "2.0",
+  "name": "menjanje broja telefona",
+  "url": "http://localhost/Morphe-testBETA/public/",
+  "tests": [{
+    "id": "5a43da71-30ab-4033-a8b2-bf5e5d43e36f",
+    "name": "1. Uspesno menjanje broja - za brojeve u srbiji",
+    "commands": [{
+      "id": "49057a44-3fda-4640-b283-72b7d6f0604d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce7b5ccf-1962-4ca6-9719-1d24e6615e26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6cf70a8-7d1b-4855-b38e-37b10ca59fb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda346ec-407f-49cc-86ba-83d631ac203b",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "22759ad7-7521-4e19-97fb-d1a094fcb5f8",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "6ebbfeb7-e7bd-4ed7-b31f-8f01488a3d48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8aa1e22c-9250-43be-976c-c0c2c1bd81ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/unknownuser.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91bc4238-4705-40cb-8679-f109208c576c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-secondary", "css:finder"],
+        ["xpath=//tr[4]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni  broj ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2550769-7aed-4e4f-9266-03a92f457f84",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a8025d1-5ba2-42bf-a139-0a8752d27c23",
+      "comment": "",
+      "command": "type",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "062312 321"
+    }, {
+      "id": "0790072a-79b0-444e-bc0e-d17398aebef3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeNumber .btn",
+      "targets": [
+        ["css=#modalChangeNumber .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni broj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fcb453-8cee-4a2e-8a2b-36db60d5975a",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Uspesno ste promenili broj telefona')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f5913c-e843-44ba-a1e1-ed95ac6da635",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Uspesno ste promenili broj telefona')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno ste promenili broj telefona"
+    }, {
+      "id": "c5f54ef9-047b-4589-93a0-b4f5ab36ca69",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'+38162312321')]", "xpath:innerText"]
+      ],
+      "value": "+38162312321"
+    }, {
+      "id": "d6341ff7-fdc0-4be4-aea2-ff6f8283ac3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b454cfe6-4c9e-4820-b718-8a8d317e201e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2264a9e0-ac37-4280-b770-f3810acce735",
+    "name": "2. Neuspesno menjanje broja - ne mogu slova i specijalni znaci",
+    "commands": [{
+      "id": "4273888e-3cda-4fb8-a424-4917e480ac52",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eb91773-72d6-4324-a2f6-ebac5b0569e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29081fc3-6b27-4b12-9340-fdd71547390a",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa6413e-2b52-439c-8230-be60ede7340f",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "1fc282ab-add5-4d09-a613-e2f5859324ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "dfa63cbd-3af4-41dc-9a0c-1235868bc4b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b48589e-89a6-499f-b99b-a5482bf26f26",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/unknownuser.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42b32682-e9d1-434a-a955-0f686665f876",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-secondary", "css:finder"],
+        ["xpath=//tr[4]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni  broj ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2d5ffa-ad53-4930-b93f-ab86b3b9128b",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "783bd67d-7139-4229-8529-d66bbed0cb1d",
+      "comment": "",
+      "command": "type",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "dsad 2!"
+    }, {
+      "id": "ee4e2be7-6a2b-4594-aa89-a2b7a3390e84",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeNumber .btn",
+      "targets": [
+        ["css=#modalChangeNumber .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni broj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33c31def-35fc-4f5a-a804-680d37ccb082",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Greska! Broj telefona nije u ispravnom formatu')]", "xpath:innerText"]
+      ],
+      "value": "Greska! Broj telefona nije u ispravnom formatu"
+    }, {
+      "id": "162c895e-fe63-4790-a564-864492940963",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'+38162312321')]", "xpath:innerText"]
+      ],
+      "value": "+38162312321"
+    }, {
+      "id": "78316b77-1c03-499b-8b26-de6a87a2f319",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03652961-5f56-4586-83cd-99ec1c4f0c4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4522008c-a9ac-4603-ba51-ed238e1987ed",
+    "name": "3. Uspesno menjanje broja - za brojeve iz bilo koje zemnje",
+    "commands": [{
+      "id": "e01cf58b-54ce-4b4f-a6f2-3d9b8586da1e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d245d42-5fde-4bcc-8b82-a6ab24f070a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f72d912a-e2d4-4298-915c-71a719edffcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d7a03e7-f209-4c9a-a765-a2b9c311de0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "92c2e394-823e-48d1-9032-8cc3b769a53f",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c26f6ac-76df-4928-ba6c-10c4a5d4072a",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "4d168785-c861-41d7-b280-cfb9338df104",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecc64971-08a0-42b3-8f42-c7317c5d6bd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/unknownuser.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "467a80c8-88dc-40a0-87cd-ab31e42cb5c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-secondary", "css:finder"],
+        ["xpath=//tr[4]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni  broj ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2741370-0eed-41db-8eaa-c2676e0e1a01",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9540c028-66f7-40a1-9057-001f191f5102",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a5b2556-9787-49b3-84d0-018f07230c9d",
+      "comment": "",
+      "command": "type",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "+382 542 132"
+    }, {
+      "id": "d03039ed-08bb-40a9-b660-bf670caedeb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeNumber .btn",
+      "targets": [
+        ["css=#modalChangeNumber .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni broj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "403dbaa3-2396-4535-8d46-d60a71f028e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Uspesno ste promenili broj telefona')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno ste promenili broj telefona"
+    }, {
+      "id": "6e3e1046-5738-44cd-a5f3-fce880623274",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'+382542132')]", "xpath:innerText"]
+      ],
+      "value": "+382542132"
+    }, {
+      "id": "8f362fd6-7082-483f-b476-51c349632514",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f424ab1c-63e9-472b-b773-0c421c211795",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "af316696-97f3-4c90-b15f-faae835b47e9",
+    "name": "4. Neuspesno menjanje broja - broj mora sadrzati makar 6 cifara mimo operatera ili pozivnog broja za zemlju",
+    "commands": [{
+      "id": "914ea2ec-cfc0-4482-8866-a80e90d0133a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8982ed3-8a18-4071-8047-e9e17044aabe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69fa5fa1-cbb5-443e-aba6-f9cf1d043780",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2821b24c-f285-452c-9f09-d3c78dd91815",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "5cf6e11f-2294-477c-b3d8-c3127541ca25",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1279976-0e4f-4085-8692-bda5c2ac6b4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "586f1a61-8ae0-4071-9e03-58f5bc6adf3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4a072e0-dee8-48a5-bcd3-14e69762a1c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/unknownuser.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fabc9ea-a394-42db-bedc-2abb22508fd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-secondary", "css:finder"],
+        ["xpath=//tr[4]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni  broj ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e1b86db-c112-4d4c-8a73-1ead6c070ad6",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86991661-240f-4c92-8d8f-27d4b1335329",
+      "comment": "",
+      "command": "type",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "061 231 2"
+    }, {
+      "id": "61a63bd8-c993-4440-8666-23b24e3812fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeNumber .btn",
+      "targets": [
+        ["css=#modalChangeNumber .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni broj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed38d96-38b3-44fa-a8cf-2dd2c84d3906",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Greska! Broj telefona nije u ispravnom formatu')]", "xpath:innerText"]
+      ],
+      "value": "Greska! Broj telefona nije u ispravnom formatu"
+    }, {
+      "id": "63321edc-1f7c-4845-94d5-19b10e417354",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'+382542132')]", "xpath:innerText"]
+      ],
+      "value": "+382542132"
+    }, {
+      "id": "cf27585f-dea0-4d83-af21-ca1e7bda53f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d29b3d96-72e8-43a8-82e3-2ac3a570bdb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef0dd68-b338-4915-aaab-bc0cad09be05",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5d0e7ca1-157c-42ec-8d45-3419b43caff9",
+    "name": "5. Neuspesno menjanje broja telefona - broj ima previse cifara",
+    "commands": [{
+      "id": "de556246-ed61-4c96-99ce-73f591129231",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dc3b48e-d8ac-49b5-bb3f-fc947139e61f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be267569-e9f8-4ecd-9ff3-cf99f2b00ad7",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9bfd79d-f9d8-4522-8036-7868f590827f",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "cbe057ec-6bd8-4819-80fb-48944ba9823b",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "3c79d02f-5e8b-41fb-920e-337e0b44a0db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef5d9eb-c27b-477d-b29b-80eefe3fde05",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/unknownuser.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c3515b5-3dd6-4104-8d59-ec337695ef23",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-secondary", "css:finder"],
+        ["xpath=//tr[4]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni  broj ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a85309d4-c372-4794-87aa-ac591f13ff73",
+      "comment": "",
+      "command": "click",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d50b2b6-182e-458a-88fd-54ae27c34c1e",
+      "comment": "",
+      "command": "type",
+      "target": "name=newphone",
+      "targets": [
+        ["name=newphone", "name"],
+        ["css=#modalChangeNumber input", "css:finder"],
+        ["xpath=//input[@name='newphone']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "+382 62 132 231 23"
+    }, {
+      "id": "65a730d1-badb-4055-af4f-34d0bea9a205",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeNumber .btn",
+      "targets": [
+        ["css=#modalChangeNumber .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeNumber']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni broj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "072db97d-e4ca-4b85-ab7e-1954e74b82a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Greska! Broj telefona nije u ispravnom formatu')]", "xpath:innerText"]
+      ],
+      "value": "Greska! Broj telefona nije u ispravnom formatu"
+    }, {
+      "id": "c91811c4-a431-4d08-a8e9-944ed9743808",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'+382542132')]", "xpath:innerText"]
+      ],
+      "value": "+382542132"
+    }, {
+      "id": "e52fd094-a8ee-4c9b-9eb2-e563bab80d0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c9facb-e96a-442a-9288-8eb5fb097856",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47133281-bcdd-44b5-b4b7-73333210e9bb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6bd7779a-8e24-4795-8f89-9059cc9a1a3e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/Morphe-testBETA/public/"],
+  "plugins": []
+}

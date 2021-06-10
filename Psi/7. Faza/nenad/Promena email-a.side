@@ -1,0 +1,453 @@
+{
+  "id": "812b057d-5f0a-4e60-ae64-da6ef3a91698",
+  "version": "2.0",
+  "name": "Promena email-a",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "a732db36-721d-4873-9d65-7d5f5a1091a5",
+    "name": "Uspesna promena email-a",
+    "commands": [{
+      "id": "60584b70-3e22-4a2c-bb0d-c98f04b46b63",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "125413f7-fef1-49de-ae96-8d661d4958ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1134x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfc4ef17-f440-4d4f-b700-2175ed975555",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "648244d1-4733-4d93-b28b-3afdcde7be91",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeca"
+    }, {
+      "id": "3b79a401-e47c-4c59-afe8-bb1f98e0a3bd",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "5587ac15-cf56-4e34-8706-040c4279da99",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1147e188-d0d9-486c-abf5-5a2389ab2bf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dc41d0e-d533-43bb-a761-5970d579980d",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "852b5979-2571-4955-b6e5-c41d398f64c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-1 > a > img",
+      "targets": [
+        ["css=.col-1 > a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/users-profile-images/jeca.jpeg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd3a9a75-7532-430e-8159-962061d6385f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni email ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f90fd55a-4d30-4e76-b1de-a63ecc8740f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni email ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f10cfb4-7e58-4bc0-8aa5-63a894a66a98",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni email ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34807812-f422-44b2-aed1-02c9637c8c22",
+      "comment": "",
+      "command": "click",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cb63afd-da45-4781-a515-2c2164e49abb",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11eb93a5-78c3-4d8f-9d80-e192c37ae8f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e95a85-9e4e-481a-9c3f-50b07070706b",
+      "comment": "",
+      "command": "type",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "nEmailovan@gmail.com"
+    }, {
+      "id": "e2d7730c-1edb-4849-ab1d-506d72775bbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeEmail .btn",
+      "targets": [
+        ["css=#modalChangeEmail .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//form/table/tbody/tr[2]/td/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97b229c-a1fc-4d77-963e-a2257c981798",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'nEmailovan@gmail.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "329d2970-fa14-4c2a-80d5-7b12a5ce58d9",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'nEmailovan@gmail.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f7151c5-8e75-43e1-bdc7-be675d6169b8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'nEmailovan@gmail.com')]", "xpath:innerText"]
+      ],
+      "value": "nEmailovan@gmail.com"
+    }]
+  }, {
+    "id": "24980e39-f94a-47a0-899e-5e5f0431e711",
+    "name": "Pogresan format email-a",
+    "commands": [{
+      "id": "929af2ca-e581-4f71-95c4-98a88c7f6368",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b127f089-8f93-4666-9566-a600f71269d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1134x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a91353b4-f073-403b-b246-c1433a7ef8a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table tr:nth-child(2) > td",
+      "targets": [
+        ["css=.table tr:nth-child(2) > td", "css:finder"],
+        ["xpath=//td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f96a6e96-c2c6-4c1d-88bb-df59b78a5837",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae01bebc-f5b3-4053-a484-8a74b29dc19c",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeca"
+    }, {
+      "id": "c33add44-89e0-43ec-bf91-aadbde5cbe85",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "308fc85f-f829-4234-8f74-50c3e6491fc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "cb01ca4e-6d88-4bd6-8f0a-ef0ce00fed1a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2f24de86-dd6b-439c-878d-7735f5470418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7f7fa5c-593a-479f-890f-19b6f040b5a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32a5c571-a1b2-4827-a661-a6a332b75267",
+      "comment": "",
+      "command": "click",
+      "target": "css=.offset-8",
+      "targets": [
+        ["css=.offset-8", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1179049-6236-40cf-b230-5ae5f963a9f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-1 > a > img",
+      "targets": [
+        ["css=.col-1 > a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost/Morphe-test/images/users-profile-images/jeca.jpeg')]", "xpath:img"],
+        ["xpath=//div[@id='header']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6c94cd3-5550-4062-891f-f33c3190f0d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Promeni email ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e455a2c-20a2-4037-b1db-b4a9c694d67f",
+      "comment": "",
+      "command": "click",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a81867e3-2897-4880-b876-848d8281499d",
+      "comment": "",
+      "command": "type",
+      "target": "name=newemail",
+      "targets": [
+        ["name=newemail", "name"],
+        ["css=#modalChangeEmail input", "css:finder"],
+        ["xpath=//input[@name='newemail']", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "email"
+    }, {
+      "id": "04cc48ff-f90d-4226-ac3f-bf2e2f10dce7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modalChangeEmail .btn",
+      "targets": [
+        ["css=#modalChangeEmail .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='modalChangeEmail']/div/div/div[2]/form/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//form/table/tbody/tr[2]/td/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61ffc12-0ad1-460d-8117-8cb200ee0465",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(7) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'nEmailovan@gmail.com')]", "xpath:innerText"]
+      ],
+      "value": "email"
+    }]
+  }],
+  "suites": [{
+    "id": "7710e816-ad24-4b20-9d9b-d509c2db2357",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a732db36-721d-4873-9d65-7d5f5a1091a5"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

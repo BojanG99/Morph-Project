@@ -1,0 +1,380 @@
+{
+  "id": "44d0da48-49a4-4638-8970-787af282e192",
+  "version": "2.0",
+  "name": "Prijavljivanje korisnika",
+  "url": "http://localhost/Morphe-testBETA/public/",
+  "tests": [{
+    "id": "4768901e-300e-4893-9c20-72a74eaea12d",
+    "name": "1. Uspesno prijavljivanje",
+    "commands": [{
+      "id": "0bf0ebe7-bbf0-40d9-8ef2-2d2348f5311b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac9e841e-4af3-4b58-8a54-912cb79dcbc6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e30d2f2-22b9-49c5-b171-52f463054d75",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81e969b2-9d6e-491c-8e1f-aaa93cd4c77a",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "b78e9685-07e5-429e-891e-9881c66287a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f702ffda-1282-400e-b835-5a6502b786f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "a09b9e92-d87a-480a-94e3-67971fa5f795",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b63217c-a702-4aec-83f2-0223c37ccee5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'programer1')]", "xpath:innerText"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "bea891c3-955d-494b-948d-90b03bac1dce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac76dd5-4f41-4d1a-839b-051f2eb24fc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izloguj se",
+      "targets": [
+        ["linkText=Izloguj se", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Izloguj se')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[3]/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/Morphe-testBETA/public/Programer/logout']", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Izloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd362344-c088-4596-90a4-08f43066748d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "518e1fa3-7701-4f98-832b-d65e2237826d",
+    "name": "2. Neuspesno prijavljivanje - lozinka pogresna",
+    "commands": [{
+      "id": "2a9eb8cb-eb76-46f4-b66d-10acb49deb30",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "208154c3-9306-4d8b-914c-5e3eea3a5307",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b9d9018-4efb-44d8-9b99-7c3d2aa7aab9",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08013c93-01fc-40bb-9853-b3bc308a2eeb",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "programer1"
+    }, {
+      "id": "4a4307a1-db3d-48fa-b24d-c705dde0da96",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8711dcf-6e7b-428a-acbc-4604ecf638ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozink"
+    }, {
+      "id": "f2827479-8ac1-4ff4-a8fb-d2408b72fede",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5afe343e-6a66-4e88-b526-29d6dd1db51e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > th",
+      "targets": [
+        ["css=tr:nth-child(2) > th", "css:finder"],
+        ["xpath=//tr[2]/th", "xpath:position"],
+        ["xpath=//th[contains(.,'Korisnicko ime ili lozinka su pogresni!')]", "xpath:innerText"]
+      ],
+      "value": "Korisnicko ime ili lozinka su pogresni!"
+    }, {
+      "id": "5e02e36c-39f3-409e-b33b-e675732695fa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d6f73848-5c7d-4cc1-b159-33746a8c3550",
+    "name": "3. Neuspesno prijavljivanje - ne postoji korisnik",
+    "commands": [{
+      "id": "ee89163a-b972-48bd-b8c7-890c0d4924e0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9069787f-f2ea-4d63-bedb-e58aabbc5b3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c804f923-c5d6-4146-aa52-945f1fcfddd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85a2810-645e-4476-97ee-8e615fb242e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameinput",
+      "targets": [
+        ["id=usernameinput", "id"],
+        ["name=usernameinput", "name"],
+        ["css=#usernameinput", "css:finder"],
+        ["xpath=//input[@id='usernameinput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "korisnik1"
+    }, {
+      "id": "4b91dfe3-9e62-4e4f-bdd5-cb18cdbe6e64",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordinput",
+      "targets": [
+        ["id=passwordinput", "id"],
+        ["name=passwordinput", "name"],
+        ["css=#passwordinput", "css:finder"],
+        ["xpath=//input[@id='passwordinput']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "lozinka"
+    }, {
+      "id": "86085c97-db33-4401-8722-93bb170ce91c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd622bd5-3140-4e2b-82f5-7e4a5aee5db5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > th",
+      "targets": [
+        ["css=tr:nth-child(2) > th", "css:finder"],
+        ["xpath=//tr[2]/th", "xpath:position"],
+        ["xpath=//th[contains(.,'Korisnicko ime ili lozinka su pogresni!')]", "xpath:innerText"]
+      ],
+      "value": "Korisnicko ime ili lozinka su pogresni!"
+    }, {
+      "id": "ec8b67bb-152f-4896-9311-deb6f97b7905",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "06e08688-3a2b-4966-a507-16ae6328467f",
+    "name": "4. Neuspesno prijavljivanje - bez parametara",
+    "commands": [{
+      "id": "b2cd0217-e7a0-410a-903a-1fe4d551e2c9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Morphe-testBETA/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a190ce36-653c-489b-ae30-1550d5cc9c94",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de46de5b-0fa6-48b0-9532-1ea85c554a6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uloguj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b5a62c8-9f33-4c9b-b51f-ba9b957464f6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > th",
+      "targets": [
+        ["css=tr:nth-child(2) > th", "css:finder"],
+        ["xpath=//tr[2]/th", "xpath:position"],
+        ["xpath=//th[contains(.,'Korisnicko ime i lozinka su obavezna polja!')]", "xpath:innerText"]
+      ],
+      "value": "Korisnicko ime i lozinka su obavezna polja!"
+    }, {
+      "id": "5c953df8-90d2-4034-9729-d22dc96bc440",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d6c0bd27-43da-4ac5-992b-f41fbc11ff03",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/Morphe-testBETA/public/"],
+  "plugins": []
+}
