@@ -1,0 +1,429 @@
+Running '1. Uspesno menjanje broja - za brojeve u srbiji'
+00:00:04
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:04
+2.
+setWindowSize on 1050x708 OK
+00:00:04
+3.
+click on id=usernameinput OK
+00:00:04
+4.
+type on id=usernameinput with value programer1 OK
+00:00:05
+5.
+type on id=passwordinput with value lozinka OK
+00:00:05
+6.
+click on css=.btn OK
+00:00:05
+7.
+click on css=a > img OK
+00:00:05
+8.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:05
+9.
+click on name=newphone OK
+00:00:06
+10.
+type on name=newphone with value 062312 321 OK
+00:00:06
+11.
+click on css=#modalChangeNumber .btn OK
+00:00:06
+12.
+click on css=h3 OK
+00:00:06
+13.
+assertText on css=h3 with value Uspesno ste promenili broj telefona OK
+00:00:06
+14.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +38162312321 OK
+00:00:07
+15.
+click on css=.dropdown-toggle OK
+00:00:07
+16.
+click on linkText=Izloguj se OK
+00:00:07
+'1. Uspesno menjanje broja - za brojeve u srbiji' completed successfully
+00:00:07
+Running '1. Uspesno menjanje broja - za brojeve u srbiji'
+00:00:12
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:12
+2.
+setWindowSize on 1050x708 OK
+00:00:12
+3.
+click on id=usernameinput OK
+00:00:12
+4.
+type on id=usernameinput with value programer1 OK
+00:00:13
+5.
+type on id=passwordinput with value lozinka OK
+00:00:13
+6.
+click on css=.btn OK
+00:00:13
+7.
+click on css=a > img OK
+00:00:13
+8.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:13
+9.
+click on name=newphone OK
+00:00:13
+10.
+type on name=newphone with value 062312 321 OK
+00:00:14
+11.
+click on css=#modalChangeNumber .btn OK
+00:00:14
+12.
+click on css=h3 OK
+00:00:14
+13.
+assertText on css=h3 with value Uspesno ste promenili broj telefona OK
+00:00:14
+14.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +38162312321 OK
+00:00:15
+15.
+click on css=.dropdown-toggle OK
+00:00:16
+16.
+click on linkText=Izloguj se OK
+00:00:17
+'1. Uspesno menjanje broja - za brojeve u srbiji' completed successfully
+00:00:18
+Running '2. Neuspesno menjanje broja - ne mogu slova i specijalni znaci'
+00:00:18
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:19
+2.
+setWindowSize on 1050x708 OK
+00:00:19
+3.
+click on id=usernameinput OK
+00:00:19
+4.
+type on id=usernameinput with value programer1 OK
+00:00:20
+5.
+type on id=passwordinput with value lozinka OK
+00:00:21
+6.
+click on css=.btn OK
+00:00:22
+7.
+click on css=a > img OK
+00:00:23
+8.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:24
+9.
+click on name=newphone OK
+00:00:25
+10.
+type on name=newphone with value dsad 2! OK
+00:00:26
+11.
+click on css=#modalChangeNumber .btn OK
+00:00:27
+12.
+assertText on css=h3 with value Greska! Broj telefona nije u ispravnom formatu OK
+00:00:28
+13.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +38162312321 OK
+00:00:29
+14.
+click on css=.dropdown-toggle OK
+00:00:30
+15.
+click on linkText=Izloguj se OK
+00:00:31
+'2. Neuspesno menjanje broja - ne mogu slova i specijalni znaci' completed successfully
+00:00:32
+Running '3. Uspesno menjanje broja - za brojeve iz bilo koje zemnje'
+00:00:32
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:33
+2.
+setWindowSize on 1050x708 OK
+00:00:33
+3.
+click on id=usernameinput OK
+00:00:33
+4.
+type on id=usernameinput with value programer1 OK
+00:00:34
+5.
+click on id=passwordinput OK
+00:00:35
+6.
+type on id=passwordinput with value lozinka OK
+00:00:36
+7.
+click on css=.btn OK
+00:00:37
+8.
+click on css=a > img OK
+00:00:38
+9.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:39
+10.
+click on name=newphone OK
+00:00:40
+11.
+click on name=newphone OK
+00:00:40
+12.
+type on name=newphone with value +382 542 132 OK
+00:00:41
+13.
+click on css=#modalChangeNumber .btn OK
+00:00:41
+14.
+assertText on css=h3 with value Uspesno ste promenili broj telefona OK
+00:00:41
+15.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +382542132 OK
+00:00:41
+16.
+click on css=.dropdown-toggle OK
+00:00:41
+17.
+click on linkText=Izloguj se OK
+00:00:42
+'3. Uspesno menjanje broja - za brojeve iz bilo koje zemnje' completed successfully
+00:00:42
+Running '4. Neuspesno menjanje broja - broj mora sadrzati makar 6 cifara mimo operatera ili pozivnog broja za zemlju'
+00:00:42
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:42
+2.
+setWindowSize on 1050x708 OK
+00:00:42
+3.
+click on id=usernameinput OK
+00:00:42
+4.
+type on id=usernameinput with value programer1 OK
+00:00:43
+5.
+click on id=passwordinput OK
+00:00:43
+6.
+type on id=passwordinput with value lozinka OK
+00:00:43
+7.
+click on css=.btn OK
+00:00:43
+8.
+click on css=a > img OK
+00:00:43
+9.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:43
+10.
+click on name=newphone OK
+00:00:44
+11.
+type on name=newphone with value 061 231 2 OK
+00:00:44
+12.
+click on css=#modalChangeNumber .btn OK
+00:00:44
+13.
+assertText on css=h3 with value Greska! Broj telefona nije u ispravnom formatu OK
+00:00:44
+14.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +382542132 OK
+00:00:45
+15.
+click on css=.dropdown-toggle OK
+00:00:45
+16.
+click on linkText=Izloguj se OK
+00:00:45
+17.
+close OK
+00:00:45
+'4. Neuspesno menjanje broja - broj mora sadrzati makar 6 cifara mimo operatera ili pozivnog broja za zemlju' completed successfully
+00:00:45
+Running '5. Neuspesno menjanje broja telefona - broj ima previse cifara'
+00:00:45
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:00:45
+2.
+setWindowSize on 1050x708 OK
+00:00:45
+3.
+click on id=usernameinput OK
+00:00:45
+4.
+type on id=usernameinput with value programer1 OK
+00:00:45
+5.
+type on id=passwordinput with value lozinka OK
+00:00:46
+6.
+click on css=.btn OK
+00:00:46
+7.
+click on css=a > img OK
+00:00:46
+8.
+click on css=tr:nth-child(4) .btn-secondary OK
+00:00:46
+9.
+click on name=newphone OK
+00:00:46
+10.
+type on name=newphone with value +382 62 132 231 23 OK
+00:00:47
+11.
+click on css=#modalChangeNumber .btn OK
+00:00:47
+12.
+assertText on css=h3 with value Greska! Broj telefona nije u ispravnom formatu OK
+00:00:47
+13.
+assertText on css=tr:nth-child(4) > td:nth-child(2) with value +382542132 OK
+00:00:47
+14.
+click on css=.dropdown-toggle OK
+00:00:47
+15.
+click on linkText=Izloguj se OK
+00:00:47
+16.
+close OK
+00:00:48
+'5. Neuspesno menjanje broja telefona - broj ima previse cifara' completed successfully
+00:00:48
+Running '1. Uspesno prijavljivanje'
+00:01:42
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:01:42
+2.
+setWindowSize on 1050x708 OK
+00:01:42
+3.
+click on id=usernameinput OK
+00:01:42
+4.
+type on id=usernameinput with value programer1 OK
+00:01:43
+5.
+click on id=passwordinput OK
+00:01:43
+6.
+type on id=passwordinput with value lozinka OK
+00:01:43
+7.
+click on css=.btn OK
+00:01:43
+8.
+assertText on css=p with value programer1 OK
+00:01:43
+9.
+click on css=.dropdown-toggle OK
+00:01:44
+10.
+click on linkText=Izloguj se OK
+00:01:44
+11.
+close OK
+00:01:44
+'1. Uspesno prijavljivanje' completed successfully
+00:01:44
+Running '2. Neuspesno prijavljivanje - lozinka pogresna'
+00:01:44
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:01:44
+2.
+setWindowSize on 1050x708 OK
+00:01:44
+3.
+click on id=usernameinput OK
+00:01:44
+4.
+type on id=usernameinput with value programer1 OK
+00:01:44
+5.
+click on id=passwordinput OK
+00:01:44
+6.
+type on id=passwordinput with value lozink OK
+00:01:45
+7.
+click on css=.btn OK
+00:01:45
+8.
+assertText on css=tr:nth-child(2) > th with value Korisnicko ime ili lozinka su pogresni! OK
+00:01:46
+9.
+close OK
+00:01:47
+'2. Neuspesno prijavljivanje - lozinka pogresna' completed successfully
+00:01:47
+Running '3. Neuspesno prijavljivanje - ne postoji korisnik'
+00:01:47
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:01:47
+2.
+setWindowSize on 1050x708 OK
+00:01:47
+3.
+click on id=usernameinput OK
+00:01:47
+4.
+type on id=usernameinput with value korisnik1 OK
+00:01:48
+5.
+type on id=passwordinput with value lozinka OK
+00:01:49
+6.
+click on css=.btn OK
+00:01:50
+7.
+assertText on css=tr:nth-child(2) > th with value Korisnicko ime ili lozinka su pogresni! OK
+00:01:51
+8.
+close OK
+00:01:52
+'3. Neuspesno prijavljivanje - ne postoji korisnik' completed successfully
+00:01:52
+Running '4. Neuspesno prijavljivanje - bez parametara'
+00:01:52
+1.
+open on http://localhost/Morphe-testBETA/public/ OK
+00:01:52
+2.
+setWindowSize on 1050x708 OK
+00:01:52
+3.
+click on css=.btn OK
+00:01:52
+4.
+assertText on css=tr:nth-child(2) > th with value Korisnicko ime i lozinka su obavezna polja! OK
+00:01:53
+5.
+close OK
+00:01:54
+'4. Neuspesno prijavljivanje - bez parametara' completed successfully
